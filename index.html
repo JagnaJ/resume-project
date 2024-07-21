@@ -1,38 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My resume</title>
-    <link rel="stylesheet" type="text/css" href="main.css"
-  </head>
-  <body>
-    <aside class="sidebar">
-      <div class="photo"></div>
-      <div class="contact-info"></div>
-      <div class="technical-skills skills"></div>
-      <div class="soft-skills skills"></div>
-    </aside>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+
+<body>
+  <div class="wrapper">
     <main class="main-content">
-      <header>
-        <h1>Hello</h1>
-        <h2>Hello</h2>
-        <h3>Hello</h3>
-        <h4>Hello</h4>
-        <h5>Hello</h5>
-        <!-- <h1>Yana Ponomarenko</h1>
-        <h3 class="work-position"></h3>
-        <p class="about-me">
-          Experience in working with foreigners in the group as well as
-          individually. Knowledge of the four languages: English, Polish,
-          Ukrainian and Russian. Ability to work in a multicultural environment.
-          Fast learner, friendly and hardworking. Openness in touch with people
-          and conscientiousness at work.
-        </p> -->
-      </header>
-      <section class="experience"></section>
+      <section class="about-me">
+        <h2 class="about-me__position">Front-End Developer</h2>
+        <h1 class="about-me__name">Yana Ponomarenko</h1>
+        <p class="about-me__summary">
+          Experience in working with foreigners in the group as well as individually. Knowledge of the five languages:
+          English, Polish, Ukrainian, Russian and Spanish. Ability to work in a multicultural environment. Fast learner, friendly
+          and hardworking. Openness in touch with people and conscientiousness at work.
+        </p>
+      </section>
+      
+      <section class="work-experience">
+        <h3 class="work-experience__title">Work Experience</h3>
+        
+        <div class="work-experience__item">
+          <h4 class="work-experience__position">DevOps Engineer</h4>
+          <p class="work-experience__place">Airlan Technologie Sieciowe | 05/2022 - now, Poland</p>
+          <ul class="work-experience__description">
+            <li>Collaborating with cross-functional teams to design, implement, and manage infrastructure and deployment processes</li>
+            <li>Automating and streamlining build and deployment processes to improve efficiency and reduce errors</li>
+            <li>Managing and monitoring cloud-based infrastructure in Azure Cloud</li>
+            <li>Implementing and maintaining containerization technologies such as Docker and Kubernetes (AKS)</li>
+            <li>Ensuring high availability and uptime of systems by performing routine maintenance and troubleshooting issues as they arise</li>
+            <li>Implementing and maintaining continuous integration and delivery (CI/CD) pipelines</li>
+            <li>Identifying and implementing improvements to infrastructure and deployment processes to increase performance, scalability, and cost efficiency</li>
+            <li>Keeping up-to-date with emerging technologies and industry best practices to continuously improve processes and infrastructure.</li>
+          </ul>
+        </div>
+        
+        <div class="work-experience__item">
+          <h4 class="work-experience__position">SPA Manager</h4>
+          <p class="work-experience__place">Thai World Spa | 09/2021 - 04/2022, Poland</p>
+          <ul class="work-experience__description">
+            <li>Hiring employees and preparing work permission</li>
+            <li>Preparing permanent stay cards for employees</li>
+            <li>Visiting Asian and Thai Embassies and preparing documents between spa salon and workers according to law</li>
+            <li>Preparation of advertising banners for new spa salons</li>
+            <li>Maintaining client databases and IT solutions for reservations</li>
+            <li>Generating financial statements and sales reports/recording daily cash flow</li>
+            <li>Overseeing spa operations, ensuring outstanding guest service, and directing spa staff.</li>
+            <li>Coordinating facility schedules</li>
+            <li>Business flow process Development</li>
+            <li>Working in an international environment</li>
+          </ul>
+        </div>
+      </section>
+      
+      <section class="education">
+        <h3 class="education__title">Education</h3>
+        
+        <div class="education__item">
+          <h4 class="education__institution">University of Social Sciences (Poland)</h4>
+          <p class="education__field">English Philology (International communication in business and advertising) 2017-2021</p>
+          <ul class="education__details">
+            <li>Took part in a student organization.</li>
+            <li>Took part in an internship in Greece (Erasmus).</li>
+            <li>Took part in an English theatre club.</li>
+          </ul>
+        </div>
+        
+        <div class="education__item">
+          <h4 class="education__institution">Academy of Finance and Business Vistula (Poland)</h4>
+          <p class="education__field">English course | July 2016 - September 2016</p>
+        </div>
+        
+        <div class="education__item">
+          <h4 class="education__institution">Music College (Ukraine)</h4>
+          <p class="education__field">An orchestra conductor | Graduated June 2016</p>
+          <ul class="education__details">
+            <li>The teacher of music.</li>
+            <li>Guitar and piano player.</li>
+            <li>An orchestra conductor.</li>
+          </ul>
+        </div>
+      </section>
     </main>
-  </body>
+    
+    <aside class="sidebar">
+      <div class="sidebar__photo">
+        <img src="img/my-photo.jpg" alt="my photo" width="370">
+      </div>
+      <div class="sidebar__content">
+        <section class="contacts">
+          <h3 class="contacts__title">Contacts</h3>
+          <p class="contacts__item"><span class="contacts__type">C:</span> <a class="contacts__link" href="tel:+48794120385">+48794120385</a></p>
+          <p class="contacts__item"><span class="contacts__type">E:</span> <a class="contacts__link" href="mailto:janaponomarenk@gmail.com">janaponomarenk@gmail.com</a></p>
+        </section>
+        
+        <section class="skills">
+          <h3 class="skills__title">Soft Skills</h3>
+          <ul class="skills__list">
+            <li class="skills__item">Agile/Scrum</li>
+            <li class="skills__item">Teamwork</li>
+          </ul>
+        </section>
+        
+        <section class="skills">
+          <h3 class="skills__title">Tech Skills</h3>
+          <ul class="skills__list">
+            <li class="skills__item">JavaScript(ES6+)</li>
+            <li class="skills__item">React.js</li>
+            <li class="skills__item">Node.js</li>
+            <li class="skills__item">HTML5 & CSS3</li>
+            <li class="skills__item">Basic DevOps</li>
+            <li class="skills__item">Docker</li>
+            <li class="skills__item">Relational Databases</li>
+            <li class="skills__item">SQL</li>
+            <li class="skills__item">Git & GitHub</li>
+          </ul>
+        </section>
+        
+        <section class="certificates">
+          <h3 class="certificates__title">Courses and Certificates</h3>
+          <ul class="certificates__list">
+            <li class="certificates__item">International English Test - B2</li>
+            <h4>Microsoft Certificate:</h4>
+            <li class="certificates__item">AZ-900(Azure Fundamentals)</li>
+            <h4>SoftServe Academy:</h4>
+            <li class="certificates__item">DevOps Fundamentals</li>
+            <li class="certificates__item">DevOps Practical</li>
+            <li class="certificates__item">HTML5/CSS3/JS</li>
+            <li class="certificates__item">JavaScript</li>
+            <li class="certificates__item">Database Fundamentals</li>
+          </ul>
+        </section>
+      </div>
+    </aside>
+  </div>
+</body>
+
 </html>
-
-
